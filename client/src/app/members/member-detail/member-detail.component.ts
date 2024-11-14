@@ -5,8 +5,7 @@ import { TabDirective, TabsetComponent, TabsModule } from 'ngx-bootstrap/tabs';
 import { GalleryItem, GalleryModule, ImageItem } from 'ng-gallery';
 import { DatePipe } from '@angular/common';
 import { TimeagoModule } from 'ngx-timeago';
-import { MeberMessagesComponent } from "../meber-messages/meber-messages.component";
-import { Message } from '../../_models/message';
+import { MemberMessagesComponent } from "../member-messages/member-messages.component";
 import { MessageService } from '../../_services/message.service';
 import { PresenceService } from '../../_services/presence.service';
 import { AccountService } from '../../_services/account.service';
@@ -15,7 +14,7 @@ import { HubConnectionState } from '@microsoft/signalr';
 @Component({
   selector: 'app-member-detail',
   standalone: true,
-  imports: [TabsModule, GalleryModule, DatePipe, TimeagoModule, MeberMessagesComponent],
+  imports: [TabsModule, GalleryModule, DatePipe, TimeagoModule, MemberMessagesComponent],
   templateUrl: './member-detail.component.html',
   styleUrl: './member-detail.component.css'
 })
